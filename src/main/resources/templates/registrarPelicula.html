@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Película</title>
+    <!-- Agregar enlaces a Bootstrap CSS (local o CDN) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="mt-5">Registro de Película</h1>
+    <form action="/pelicula/register" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre de la Película</label>
+            <input type="text" class="form-control" id="nombre" name="nombre"
+                   placeholder="Ingrese el nombre de la película" required>
+        </div>
+        <div class="form-group">
+            <label for="director">Director</label>
+            <input type="text" class="form-control" id="director" name="director"
+                   placeholder="Ingrese el nombre del director" required>
+        </div>
+        <div class="form-group">
+            <label for="fechaEstreno">Fecha de Estreno</label>
+            <input type="date" class="form-control" id="fechaEstreno" name="fechaEstreno" required>
+        </div>
+        <div class="form-group">
+            <label for="genero">Género</label>
+            <input type="text" class="form-control" id="genero" name="genero" placeholder="Ingrese el género" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Registrar Película</button>
+    </form>
+</div>
+<!-- Agregar enlaces a Bootstrap JS y jQuery (local o CDN) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+ 
